@@ -2,37 +2,37 @@
 
 // map-like
 
-function mapToNegativize (sourceArray) {
-    const newArray = []
-    sourceArray.forEach(element => {
-        newArray.push(element * -1);
-    });
-    return newArray;
-};
-
-function mapToNoChange (sourceArray){
-    const newArray = [];
-    sourceArray.forEach(element => {
-        newArray.push(element);
-    });
-    return newArray;
-};
-
-function mapToDouble(sourceArray) {
-    const newArray = [];
-    sourceArray.forEach(element => {
-        newArray.push(element * 2);
-    });
-    return newArray;
-}
-
-function mapToSquare(sourceArray) {
-    const newArray = [];
-    sourceArray.forEach(element => {
-        newArray.push(element ** 2);
-    });
-    return newArray;
-}
+function mapToNegativize(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(-1 * src[i])
+    }
+    return r
+  }
+  
+  function mapToNoChange(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(src[i])
+    }
+    return r
+  }
+  
+  function mapToDouble(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(2 * src[i])
+    }
+    return r
+  }
+  
+  function mapToSquare(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(src[i] * src[i])
+    }
+    return r
+  }
 
 
 // reduce-like
