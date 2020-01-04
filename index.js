@@ -21,12 +21,15 @@ function reduceToTotal(sourceArray, startingPoint=0) {
 }
 
 function reduceToAllTrue(sourceArray) {
-    return sourceArray.reduce(function(, a) {
-    
-    })
-
+    return sourceArray.reduce((a, b) => {
+        if (a === false || b === false) return false;
+        return true;
+    });
 }
 
 function reduceToAnyTrue(sourceArray) {
-
+    return sourceArray.reduce((a, b) => {
+        if (a === true || b === true) return true;
+        return false;
+    });   
 }
