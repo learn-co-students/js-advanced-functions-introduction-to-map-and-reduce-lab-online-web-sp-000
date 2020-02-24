@@ -36,14 +36,9 @@ function reduceToTotal(array, startingPoint=0){
 }
 
 function reduceToAllTrue(array){
-    let result = true
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === false) {
-            result = false;
-            break;
-        }
+        if (!array[i]) return false
     }
-    return result
 }
 
 function reduceToAnyTrue(array){
