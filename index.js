@@ -40,7 +40,7 @@ function mapToNegativize(sourceArray) {
  function reduceToAllTrue(sourceArray) {
     let allTrue = true 
     sourceArray.forEach(item => {
-       if (!!item === false) {
+       if (item === false) {
           allTrue = false
        }
     })
@@ -50,7 +50,7 @@ function mapToNegativize(sourceArray) {
  function reduceToAnyTrue(sourceArray) {
     let anyTrue = false
     sourceArray.forEach(item => {
-       if (!!item === true) {
+       if (item === true) {
           anyTrue = true
        }
     })
