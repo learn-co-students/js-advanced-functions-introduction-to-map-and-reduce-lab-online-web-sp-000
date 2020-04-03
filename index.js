@@ -6,6 +6,67 @@ const startingPoint = 100
 const allTrue = [1, 2, true, "razmatazz"];
 
 function mapToNegativize(array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+        result.push(-1 * array[i])
+    }
+    console.log(result);
+    return result;
+}
+
+function mapToNoChange(array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+         result.push(array[i])
+    }
+    return result;
+}
+
+function mapToDouble(array) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        newArray.push(2* array[i])
+    }
+    return newArray;
+}
+
+function mapToSquare(array) {
+    let squareArray = []
+    for (let i = 0; i < array.length; i++) {
+        squareArray.push(array[i] ** 2)
+    }
+    return squareArray;
+}
+
+function reduceToTotal(sourceArray, startingPoint) {
+    let total = 0;
+    for (let i = 0; i < sourceArray.length; i++) {
+        total = total + sourceArray[i];
+    }
+    if (startingPoint != undefined) {
+        return total + startingPoint;
+    } else {
+        return total;
+    }
+}
+
+function reduceToAllTrue(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (!array[i]) return false;
+        }
+    return true;
+}
+
+function reduceToAnyTrue(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === true) return true;
+    }
+    return false;
+}
+
+
+/*
+function mapToNegativize(array) {
     let result  = array.map(element => {
         return element * -1;
     })
@@ -69,3 +130,5 @@ mapToDouble(posArray);
 mapToSquare(posArray);
 
 reduceToTotal(sourceArray, startingPoint);
+
+*/
