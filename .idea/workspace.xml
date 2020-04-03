@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a0865b6-01b3-461d-bd71-c953f6f2bf09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/js-advanced-functions-introduction-to-map-and-reduce-lab-online-web-sp-000.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585866872597</updated>
-      <workItem from="1585866876894" duration="13964000" />
+      <workItem from="1585866876894" duration="14295000" />
     </task>
     <servers />
   </component>

@@ -6,36 +6,36 @@ const startingPoint = 100
 const allTrue = [1, 2, true, "razmatazz"];
 
 function mapToNegativize(array) {
-    let mapToNegativize = array.map(element => {
+    let result  = array.map(element => {
         return element * -1;
     })
     console.log(posArray);
     console.log(`mapToNegativize: ${mapToNegativize}`)
-    return mapToNegativize
+    return result
 }
 
 function mapToNoChange(array) {
-    let mapToNoChange = array.map(element => {
+    let result = array.map(element => {
         return element;
     })
     console.log(`mapToNoChange: ${mapToNoChange}`)
-    return mapToNoChange;
+    return result;
 }
 
 function mapToDouble(array) {
-    let mapToDouble = array.map(element => {
+    let result = array.map(element => {
         return element * 2;
     })
     console.log(`mapToDouble: ${mapToDouble}`)
-    return mapToDouble;
+    return result;
 }
 
 function mapToSquare(array) {
-    let mapToSquare = array.map(element => {
+    let result = array.map(element => {
         return element ** 2;
     })
     console.log(`mapToSquare: ${mapToSquare}`)
-    return mapToSquare;
+    return result;
 }
 
 function reduceToTotal(sourceArray, startingPoint) {
