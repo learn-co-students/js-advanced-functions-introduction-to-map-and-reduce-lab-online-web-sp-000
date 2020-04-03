@@ -59,7 +59,7 @@ function reduceToAllTrue(array) {
 
 function reduceToAnyTrue(array) {
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === true) return true;
+        if (array[i]) return true;
     }
     return false;
 }
