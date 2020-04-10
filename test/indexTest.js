@@ -34,6 +34,7 @@ describe('my own reduce-like methods', function() {
     })
   })
 
+
   describe("reduceToTotal returns a running total when given a starting point", function() {
     it("reduces correctly", function(){
       sourceArray = [1,2,3]
