@@ -52,3 +52,22 @@ function reduceToAnyTrue(src) {
   }
   return false
 }
+
+function reduceToTotal(values,startingPoint= null){
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  if (startingPoint === null){
+  return values.reduce(reducer)
+  } else {
+  return values.reduce(reducer,startingPoint)
+  }
+}
+
+function reduceToAllTrue(values){
+  const isBelowThreshold = (currentValue) => currentValue ? true : false;
+  return values.every(isBelowThreshold);
+}
+
+function reduceToAnyTrue(values){
+  const isBelowThreshold = (currentValue) => currentValue ? true : false;
+  return values.some(isBelowThreshold);
+}
