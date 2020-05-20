@@ -54,26 +54,17 @@ console.log(total)
     reduceToAllTrue returns false when any value is falsy
       2) reduces correctly      
 */
-// function reduceToAllTrue(arr){
-//     for (each of arr){
-//         if (!each) 
-//             return false
+function reduceToAllTrue(arr){
+    for (each of arr){
+        if (!each) 
+            return false
         
-//     }
-//     return true
-// }
+    }
+    return true
+}
 
 // reduceToAllTrue([-1,10,15])
 
-function reduceToAllTrue(src) {
-  for (let i = 0; i < src.length; i++ ) {
-    if (!src[i]) return false
-    console.log(!src[i])
-  }
-  return true
-}
-
-reduceToAllTrue([22, 3, 5])
 
 function reduceToAnyTrue(src) {
   for (let i = 0; i < src.length; i++ ) {
