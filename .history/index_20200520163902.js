@@ -73,8 +73,6 @@ function reduceToAllTrue(src) {
   return true
 }
 
-reduceToAllTrue([22, 3, 5])
-
 function reduceToAnyTrue(src) {
   for (let i = 0; i < src.length; i++ ) {
     if (src[i]) return true

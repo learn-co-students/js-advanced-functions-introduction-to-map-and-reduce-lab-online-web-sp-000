@@ -66,14 +66,13 @@ console.log(total)
 // reduceToAllTrue([-1,10,15])
 
 function reduceToAllTrue(src) {
-  for (let i = 0; i < src.length; i++ ) {
-    if (!src[i]) return false
-    console.log(!src[i])
+//   for (let i = 0; i < src.length; i++ ) {
+  for (each of src) {
+    // if (!src[i]) return false
+    if (! each) return false
   }
   return true
 }
-
-reduceToAllTrue([22, 3, 5])
 
 function reduceToAnyTrue(src) {
   for (let i = 0; i < src.length; i++ ) {
