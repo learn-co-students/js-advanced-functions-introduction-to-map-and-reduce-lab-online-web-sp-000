@@ -50,7 +50,7 @@ function reduceToTotal(array, start) {
 ///
 function reduceToAllTrue(array) {
   for (let i = 0; i < array.length; i++ ) {
-      if (!array[i]) return false
+      if (!Boolean(array[i])) return false
     }
     return true
 }
