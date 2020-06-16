@@ -1,24 +1,35 @@
 // Your code here
-function mapToNegativize(sourceArray) {
-    const negative = sourceArray.map(num => num * -1)
-    return negative
-}
-
-function mapToNoChange(sourceArray) {
-    const change = sourceArray.map(num => num)
-    return change
-}
-
-function mapToDouble(sourceArray) {
-    const double = sourceArray.map(num => num * 2)
-    return double
-}
-
-function mapToSquare(sourceArray) {
-    const square = sourceArray.map(num => num ** 2)
-    return square
-}
-
+function mapToNegativize(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(-1 * src[i]) // Unique work
+    }
+    return r
+  }
+   
+  function mapToNoChange(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(src[i]) // Unique work
+    }
+    return r
+  }
+   
+  function mapToDouble(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(2 * src[i]) // Unique work
+    }
+    return r
+  }
+   
+  function mapToSquare(src) {
+    let r = []
+    for (let i = 0; i < src.length; i++ ) {
+      r.push(src[i] * src[i]) // Unique work
+    }
+    return r
+  }
 
 function reduceToTotal(sourceArray, startingPoint=0) {
     let total = startingPoint
