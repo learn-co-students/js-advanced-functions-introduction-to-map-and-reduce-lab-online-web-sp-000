@@ -28,7 +28,7 @@ function mapToDouble(array){
  function reduceToTotal(array){
    let sum = 0
 
-   array.reduce(reducer(accumulator,currentValue[,index[,array]])[,sum])
+   array.reduce(reducer(accumulator,currentValue[index[array]])[sum])
 
 
 
