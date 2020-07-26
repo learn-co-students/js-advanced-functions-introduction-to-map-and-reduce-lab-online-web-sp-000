@@ -37,13 +37,13 @@ const reduceToTotal = function(sourceArray, startingPoint = 0){
     return total;
 };
 const reduceToAllTrue = function(sourceArray){
-    for ( const x in sourceArray){
+    for ( const x of sourceArray){
         if (!x) return false;  // return false if any value if falsey
     }
     return true; 
 };
 const reduceToAnyTrue = function(sourceArray){
-    for ( const x in sourceArray ){
+    for ( const x of sourceArray ){
         if (x) return true;  
     }
     return false; 
