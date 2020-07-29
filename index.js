@@ -25,16 +25,40 @@ function mapToDouble(array){
 
   // console.log (mapToSquare)
  }
- function reduceToTotal(array){
-   let sum = 0
+ function reduceToTotal(array,total = 0 ){
+   let sum = total
+   // the inital
+      for (let i = 0; i < array.length; i++ ){
+        // itereate throughout the array
+      sum += array[i]
+      // currentValue = array[i]
+      // adding the index[i] plus the prior value
+      // adding each element into the array
 
-   array.reduce(reducer(accumulator,currentValue[index[array]])[sum])
+      }
 
 
 
    return sum
  }
 
+ // [1, 2, true, "razmatazz"] == true
+ // [1, 2, true, "razmatazz", false] == false
+
+ function reduceToAllTrue(array){
+
+   for (let i = 0; i < array.length; i++ ){
+   // we want to access the elements in the array instead of the entire array
+
+   if( !array[i]  ) return false
+   // if we expect one line return we can put conditional statement on one line
+
+ }
+  return true
+
+
+ }
+  // intergers, booleans, string = array
  // arr.reduce(callback( accumulator, currentValue[, index[, array]] )[, initialValue])
 
 // reduce
@@ -47,3 +71,12 @@ function mapToDouble(array){
 //
 // console.log(map1);
 // // expected output: Array [2, 8, 18, 32]
+
+
+function reduceToAnyTrue(array){
+  for (let i = 0; i < array.length; i++ ){
+
+    if (!!array[i]) return true
+  }
+  return false
+}

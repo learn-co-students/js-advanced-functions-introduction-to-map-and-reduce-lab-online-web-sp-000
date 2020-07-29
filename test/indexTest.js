@@ -3,7 +3,7 @@ describe('my own map-like methods', function() {
    it("transforms correctly", function(){
       expect(mapToNegativize([1, 2, 3, -9])).to.eql([-1, -2, -3, 9])
    })
-   
+
 
   describe("mapToNoChange returns an array with the original values", function() {
     it("transforms correctly", function(){
@@ -46,6 +46,7 @@ describe('my own reduce-like methods', function() {
   describe("reduceToAllTrue returns true when all values are truthy", function() {
     it("reduces correctly", function(){
       sourceArray = [1, 2, true, "razmatazz"]
+      // intergers, booleans, string
       expect(reduceToAllTrue(sourceArray)).to.be.true
     })
   })
