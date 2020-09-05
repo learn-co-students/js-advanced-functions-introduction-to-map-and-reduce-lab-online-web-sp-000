@@ -29,3 +29,24 @@ function mapToSquare(array) {
   }
   return a;
 }
+
+function reduceToTotal(array, int = 0) {
+  for (let i = 0; i < array.length; i++) {
+    int += array[i];
+  }
+  return int;
+}
+
+function reduceToAllTrue(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (!array[i]) return false;
+  }
+  return true;
+}
+
+function reduceToAnyTrue(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i]) return true;
+  }
+  return false;
+}
