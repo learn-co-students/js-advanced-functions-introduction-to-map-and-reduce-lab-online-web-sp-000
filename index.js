@@ -49,7 +49,6 @@ function reduceToTotal(arr, initialValue=0) {
         total += arr[i]
     }
     return total
-    
     // return arr.reduce(function(p, c) {
     //     return p + c;
     // }, 0);
@@ -67,9 +66,9 @@ function reduceToAllTrue(arr){
 
 
 function reduceToAnyTrue(arr) {
-for(let i = 0; i < arr.length; i++) {
-    if(arr[i]) { return true}
-}
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i]) { return true}
+    }
 return false
 }
 //   reduceToAnyTrue([NaN,"",null]);
