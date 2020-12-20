@@ -1,18 +1,3 @@
-// Your code here
-/*
-map-like
-mapToNegativize(sourceArray)
-mapToNoChange(sourceArray)
-mapToDouble(sourceArray)
-mapToSquare(sourceArray)
-Remember, all map methods return a new Array.
-
-reduce-like
-reduceToTotal(sourceArray, startingPoint)
-reduceToAllTrue(sourceArray)
-reduceToAnyTrue(sourceArray)
- */
-
 const mapToNegativize = (sourceArray) => {
     // make all values in sourceArray negative
     const negativesArray = []
