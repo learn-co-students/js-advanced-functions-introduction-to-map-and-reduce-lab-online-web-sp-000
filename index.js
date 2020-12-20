@@ -27,3 +27,25 @@ const mapToNegativize = (sourceArray) => {
     })
     return negativesArray
 }
+
+const mapToNoChange = (sourceArray) => {
+    return sourceArray
+}
+
+const mapToDouble = (sourceArray) => {
+    // return array with original values * 2
+    const doubledArray = []
+    sourceArray.forEach(value => {
+        doubledArray.push(value * 2)
+    })
+    return doubledArray
+}
+
+const mapToSquare = (sourceArray) => {
+    // return array with original values squared
+    const squaredArray = []
+    sourceArray.forEach(value => {
+        squaredArray.push(value * value)
+    })
+    return squaredArray
+}
