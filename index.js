@@ -22,12 +22,7 @@ function mapToSquare(sourceArray) {
 
 function reduceToTotal(sourceArray, startingPoint = null) {
     const reducer = (accumulator, value) => accumulator + value;
-        if (startingPoint === null) {
-            return sourceArray.reduce(reducer)
-        }
-        else {
             return sourceArray.reduce(reducer,startingPoint)
-        }
 }
 
 function reduceToAllTrue(sourceArray){
