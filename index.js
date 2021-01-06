@@ -30,12 +30,12 @@ function reduceToTotal(sourceArray, startingPoint = null) {
         }
 }
 
-function reduceToAllTrue(values){
+function reduceToAllTrue(sourceArray){
     const allAreTrue = (currentValue) => currentValue ? true : false;
-    return values.every(allAreTrue);
+    return sourceArray.every(allAreTrue);
   }
   
-  function reduceToAnyTrue(values){
+  function reduceToAnyTrue(sourceArray){
     const someAreTrue = (currentValue) => currentValue ? true : false;
-    return values.some(someAreTrue);
+    return sourceArray.some(someAreTrue);
   }
