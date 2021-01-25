@@ -1,5 +1,4 @@
 // Your code here
-// Your code here
 function mapToNegativize(src) {
   let r = []
   for (let i = 0; i < src.length; i++ ) {
