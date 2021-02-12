@@ -49,12 +49,6 @@ function reduceToAllTrue(sourceArray) {
         }
     }
     return true;
-//    return sourceArray.reduce((accumulator, currentValue) => {
-//        if (accumulator) {
-//         return accumulator = !!currentValue
-//        }
-//        return accumulator
-//    })
 }
 
 function reduceToAnyTrue(sourceArray) {
@@ -64,13 +58,4 @@ function reduceToAnyTrue(sourceArray) {
         }
     }
     return false;
-    // return sourceArray.reduce((accumulator, currentValue) => {
-    //  console.log("acc", accumulator)
-    //  console.log(currentValue)
-    //  console.log(!!currentValue)
-    //     if (!accumulator) {
-    //      return accumulator = !!currentValue
-    //     }
-    //     return accumulator
-    // })
  }
