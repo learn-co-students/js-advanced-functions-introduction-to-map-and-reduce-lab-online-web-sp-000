@@ -10,7 +10,12 @@ function mapToNegativize(sourceArray){
 }
 
 function mapToNoChange(sourceArray){
-	return sourceArray
+	const newArray = []
+	for (let i = 0; i < sourceArray.length; i++){
+		const value = sourceArray[i]
+		newArray.push(value)
+	}
+	return newArray
 }
 
 function mapToDouble(sourceArray){
