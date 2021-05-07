@@ -28,29 +28,29 @@ function mapToSquare(arr) {
 }
 
 function reduceToTotal(arr, start = 0) {
-    let returnVal = 0
+    let returnVal = start
 
-    for(start; start < arr.length; start++) {
-        returnVal += arr[start]
+    for(let i = 0; i < arr.length; i++) {
+        returnVal += arr[i]
     }
 
     return returnVal
 }
 
 function reduceToAllTrue(arr) {
-    arr.forEach(e => {
-        if (!e) { return false }
-    })
+
+    for(let i = 0; i < arr.length; i++) {
+        if (!arr[i]) return false
+    }
 
     return true;
 }
 
 function reduceToAnyTrue(arr) {
-    arr.forEach(e => {
-        if (e) {
-            return true;
-        }
-    })
+
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i]) return true
+    }
 
     return false;
 }
