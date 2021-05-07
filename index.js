@@ -8,7 +8,11 @@ function mapToNegativize(arr) {
 }
 
 function mapToNoChange(arr) {
-    return arr
+    let returnArr = []
+
+    arr.forEach(e => { returnArr.push(e) })
+
+    return returnArr
 }
 
 function mapToDouble(arr) {
