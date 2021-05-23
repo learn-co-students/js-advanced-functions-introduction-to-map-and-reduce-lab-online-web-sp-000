@@ -32,15 +32,15 @@ function reduceToTotal(sourceArray, startingPoint = 0) {
 }
 
 function reduceToAllTrue(sourceArray) {
-  sourceArray.forEach(e => {
-    if (!e) return false
-  })
+  for (let i = 0; i < sourceArray.length; i++) {
+    if (!sourceArray[i]) return false
+  }
   return true
 }
 
 function reduceToAnyTrue(sourceArray) {
-  sourceArray.forEach(e => {
-    if (e) return true
-  })
+  for (let i = 0; i < sourceArray.length; i++) {
+    if (sourceArray[i]) return true
+  }
   return false
 }
